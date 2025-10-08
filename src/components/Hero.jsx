@@ -6,11 +6,8 @@ function HomePage() {
   return (
     <>
       <Hero />
-      {/* About Preview */}
       <AboutPreview />
-      {/* Services Preview */}
       <ServicesPreview />
-      {/* Why Choose Us */}
       <WhyChooseUs />
     </>
   );
@@ -53,7 +50,7 @@ function Hero() {
           <div className="flex-1 text-center lg:text-left space-y-8 max-w-2xl mx-auto lg:mx-0">
             <div className="space-y-6">
               <h1 className="text-6xl sm:text-7xl lg:text-6xl font-bold leading-tight text-slate-900">
-                Your Reliable Partner for Business
+                EMPOWERING BUSINESS
               </h1>
 
               <div className="flex items-center justify-center lg:justify-start gap-4">
@@ -71,21 +68,14 @@ function Hero() {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105">
+              <Link to="/services" className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                  Schedule Consultation
+                  View Our Services
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
-              </button>
-
-              <Link
-                to="/services"
-                className="px-8 py-4 bg-white border-2 border-slate-300 text-slate-700 rounded-lg font-semibold hover:bg-slate-50 hover:border-emerald-500 transition-all duration-300 text-center"
-              >
-                View Our Services
               </Link>
             </div>
           </div>
@@ -99,11 +89,19 @@ function Hero() {
               <div className="absolute w-48 h-48 lg:w-60 lg:h-60 rounded-full border border-green-400/20 animate-pulse delay-500"></div>
 
               {/* Central Hub */}
-              <div className="absolute z-20 flex flex-col items-center justify-center w-32 h-32 lg:w-36 lg:h-36 bg-gradient-to-br from-emerald-500/20 to-green-600/20 backdrop-blur-xl border border-emerald-400/40 rounded-full shadow-2xl animate-float">
+              {/* <div className="absolute z-20 flex flex-col items-center justify-center w-32 h-32 lg:w-36 lg:h-36 bg-gradient-to-br from-emerald-500/20 to-green-600/20 backdrop-blur-xl border border-emerald-400/40 rounded-full shadow-2xl animate-float">
                 <div className="text-2xl lg:text-3xl font-bold text-emerald-700">ERP</div>
                 <div className="text-xs text-emerald-600 text-center mt-1 leading-tight">
                   Enterprise Resource <br />Planning
                 </div>
+              </div> */}
+
+              <div className="absolute z-20 flex flex-col items-center justify-center w-32 h-32 lg:w-36 lg:h-36 bg-gradient-to-br from-emerald-500/20 to-green-600/20 backdrop-blur-xl border border-emerald-400/40 rounded-full shadow-2xl animate-float">
+                <img
+                  src="customer-service.png"   // 🖼️ change this to your service logo path
+                  alt="ERP Service Logo"
+                  className="w-16 h-16 lg:w-20 lg:h-20 object-contain drop-shadow-md"
+                />
               </div>
 
               {/* Service Bubbles */}
@@ -203,7 +201,7 @@ function AboutPreview() {
                 ABOUT ASTUTEPRO
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                Your Trusted Financial Partners Since 2013
+                Your Trusted Financial Partner
               </h2>
               <div className="h-1 w-20 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
             </div>
@@ -219,15 +217,6 @@ function AboutPreview() {
               businesses seeking reliable financial guidance and strategic insights.
             </p>
 
-            
-
-            <Link
-              to="/about"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105 transition-all duration-300"
-            >
-              Discover Our Story
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
 
           {/* Right Content - Vision & Mission Cards */}
@@ -449,19 +438,12 @@ function WhyChooseUs() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="inline-flex flex-col sm:flex-row gap-4">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105">
+            <Link to="/contact" className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative z-10 flex items-center justify-center gap-3">
-                Start Your Project
+                Get Free Consultation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
-            </button>
-
-            <Link
-              to="/contact"
-              className="px-8 py-4 bg-white border-2 border-slate-300 text-slate-700 rounded-lg font-semibold hover:bg-slate-50 hover:border-emerald-500 transition-all duration-300"
-            >
-              Get Free Consultation
             </Link>
           </div>
         </div>

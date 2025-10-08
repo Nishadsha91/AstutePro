@@ -113,23 +113,7 @@ function About() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Hero Header */}
-        <div className="text-center max-w-4xl mx-auto mb-20">
-       
-          <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 py-13 leading-tight mb-6">
-            Building Financial Success
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-600">
-              Stories Together
-            </span>
-          </h1>
-          <div className="flex justify-center mb-8">
-            <div className="h-1 w-24 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
-          </div>
-          <p className="text-xl text-slate-700 leading-relaxed max-w-3xl mx-auto">
-            For over a decade, AstutePro has been the cornerstone of financial excellence for businesses 
-            seeking precision, innovation, and sustainable growth in an ever-evolving economic landscape.
-          </p>
-        </div>
+
 
         {/* Company Story */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
@@ -337,53 +321,7 @@ function About() {
         </div>
 
         {/* Team Excellence */}
-        <div className="mb-24">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                  Meet Our Expert Team
-                </h2>
-                <div className="h-1 w-20 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
-              </div>
-
-              <p className="text-lg text-slate-700 leading-relaxed">
-                Our strength lies in our people. We've assembled a team of highly qualified, 
-                experienced professionals who are not just experts in their fields, but passionate 
-                about delivering exceptional value to our clients.
-              </p>
-
-              <div className="space-y-6">
-                {teamHighlights.map((highlight, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center mt-1">
-                      <ThumbsUp className="w-4 h-4 text-emerald-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900 mb-2">{highlight.title}</h4>
-                      <p className="text-slate-700">{highlight.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { role: "Chartered Accountants", count: "25+" },
-                { role: "Tax Specialists", count: "15+" },
-                { role: "Financial Analysts", count: "8+" },
-                { role: "ERP Consultants", count: "12+" }
-              ].map((team, index) => (
-                <div key={index} className="p-6 bg-white/50 rounded-xl border border-white/30 text-center">
-                  <div className="text-2xl font-bold text-emerald-600 mb-2">{team.count}</div>
-                  <div className="text-sm font-semibold text-slate-700">{team.role}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
+      
 
       </div>
     </section>
