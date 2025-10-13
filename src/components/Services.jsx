@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 function Services() {
   const cardVariants = {
@@ -16,6 +18,7 @@ function Services() {
       benefits: ["Financial Statement Preparation", "Record Maintenance", "Bank Reconciliation"],
       img: "/pexels-fauxels-3184292.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/accounting-service",
     },
     {
       title: "AUDIT & INTERNAL AUDIT",
@@ -23,6 +26,7 @@ function Services() {
       benefits: ["Compliance Check", "Risk Assessment", "Internal Controls Review"],
       img: "/AUDIT & INTERNAL AUDIT.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/auditing-service",
     },
     {
       title: "MIS, BUDGETING, & PRODUCT COSTING",
@@ -30,6 +34,7 @@ function Services() {
       benefits: ["MIS Reporting", "Budget Analysis", "Cost Optimization"],
       img: "/cost.png",
       gradient: "from-black/80 to-black-900/30",
+      link: "/mis-budget-service",
     },
     {
       title: "BUSINESS SETUP SERVICES",
@@ -37,6 +42,7 @@ function Services() {
       benefits: ["Company Registration", "Legal Compliance", "Business Structuring"],
       img: "/busines.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/business-service",
     },
     {
       title: "VALUE ADDED TAX SERVICES",
@@ -44,6 +50,7 @@ function Services() {
       benefits: ["VAT Registration", "Filing & Compliance", "VAT Advisory"],
       img: "/VAT.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/vat-service",
     },
     {
       title: "PAYROLL SERVICES",
@@ -51,6 +58,7 @@ function Services() {
       benefits: ["Salary Processing", "Statutory Compliance", "Employee Reports"],
       img: "/payroll.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/payroll-service",
     },
     {
       title: "ERP & ACCOUNTING SOFTWARES",
@@ -58,6 +66,7 @@ function Services() {
       benefits: ["ERP Implementation", "Custom Software", "Training & Support"],
       img: "/159347-OV1JJK-885.jpg",
       gradient: "from-black/80 to-black-900/30",
+       link: "/erp-service",
     },
     {
       title: "CORPORATE TAX SERVICES",
@@ -65,6 +74,7 @@ function Services() {
       benefits: ["Tax Planning", "Filing & Compliance", "Audit Support"],
       img: "/corporate.jpg",
       gradient: "from-black/80 to-black-900/30",
+       link: "/corporate-service",
     },
     {
       title: "INVENTORY & FIXED ASSET VERIFICATION",
@@ -72,6 +82,7 @@ function Services() {
       benefits: ["Asset Verification", "Inventory Audit", "Reporting"],
       img: "/web-7174079.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/inventory-service",
     },
     {
       title: "WEB DEVELOPMENT",
@@ -79,6 +90,7 @@ function Services() {
       benefits: ["Responsive Web Design", "Web Development", "UI/UX Design"],
       img: "/web.jpg",
       gradient: "from-black/80 to-black-900/30",
+      link: "/web-service",
     },
     {
       title: "ESR & AML COMPLIANCE",
@@ -86,6 +98,7 @@ function Services() {
       benefits: ["ESR Advisory", "AML Compliance", "Regulatory Reporting"],
       img: "/esr.webp",
       gradient: "from-black/80 to-black-900/30",
+       link: "/esr-service",
     },
   ];
 
@@ -137,9 +150,11 @@ function Services() {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-6 flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+                  <Link
+                    to={service.link} 
+                    className="mt-6 flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
                     Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             ))}
