@@ -98,7 +98,7 @@ function Services() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-24 lg:mb-32">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">Our <span className="text-green-600">Featured Services</span></h3>
+            <h3 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">Our <span className="text-green-600">Services</span></h3>
             <p className="text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto">
               Highlighting key solutions that drive significant value for our clients, combining expertise with impactful results.
             </p>
