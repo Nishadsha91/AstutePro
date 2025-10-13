@@ -11,7 +11,6 @@ function Footer() {
     { name: "Financial Consulting", href: "#financial" },
     { name: "ERP Implementation", href: "#erp" },
     { name: "HR Solutions", href: "#hr" },
-    { name: "About Us", href: "#about" },
   ];
 
   return (

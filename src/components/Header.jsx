@@ -31,12 +31,15 @@ const Header = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                ASTUTEPRO
-              </h1>
-              <p className="text-xs sm:text-sm uppercase text-gray-600 font-medium tracking-wide">
-                Accountants & Tax Consultants
-              </p>
+<h1 className="text-xl sm:text-2xl font-extrabold text-gray-900 font-[Raleway] tracking-wide group-hover:text-blue-600 transition-colors">
+  ASTUTEPRO
+</h1>
+<p className="text-xs sm:text-sm uppercase text-gray-600 font-[Raleway] font-medium tracking-wider">
+  ACCOUNTS | TAX | IT
+</p>
+
+
+
             </div>
           </Link>
 
@@ -48,7 +51,7 @@ const Header = () => {
         to={item.to}
         className={`px-1 py-2 font-medium transition-colors duration-300 ${
           isActive(item.to)
-            ? "text-blue-600" // Active page: only color, no underline
+            ? "text-blue-600" 
             : "text-gray-700 hover:text-blue-600"
         }`}
       >

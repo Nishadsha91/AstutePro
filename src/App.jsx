@@ -14,13 +14,14 @@ function App() {
     <>
     <Preloader/>
       <Header />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Hero/>} />
         <Route path="/about" element={<About />} /> 
         <Route path="/services" element={<Services />} /> 
         <Route path="/contact" element={<Contact />} /> 
       </Routes>
-      <ScrollToTop/>
+      
       <Footer />
     </>
   );
