@@ -64,15 +64,34 @@ function About() {
             <motion.div variants={itemVariants} className="space-y-4">
               <span className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-4">WHO WE ARE</span>
               <h2 className="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-                Your Trusted Financial <span className="text-emerald-600">Partners</span>
+                Your Trusted Financial <span className="text-emerald-600">Partner</span>
               </h2>
               <div className="h-1.5 w-24 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full mt-4"></div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-6 text-lg text-slate-700 leading-relaxed">
-              <div className="space-y-4">
-                <p>At Astutepro, we are team of professionals come up with over a decades of experience in accounts, taxation, audit, MIS and finance related matters. We provide end to end accounting, finance, and tax services tailored to the unique needs of our clients. From accurate bookkeeping and financial reporting to advanced tax planning, compliance management, and strategic advisory, we ensure that every detail is handled with precision and care. We uphold the highest standards of integrity, accuracy, and confidentiality in every engagement. Whether managing complex tax matters, streamlining accounting processes, or providing financial insights for decision-making, we are committed to excellence at every step.</p>
-              </div>
+<div className="space-y-4 text-justify leading-relaxed">
+  <p>
+    At Astutepro, we are a team of experienced professionals with over a decade 
+    of expertise in accounts, taxation, audit, MIS, and finance-related services. 
+    We provide end-to-end accounting, financial management, and tax solutions 
+    tailored to the unique needs of every client.
+  </p>
+
+  <p>
+    From accurate bookkeeping and financial reporting to advanced tax planning, 
+    compliance management, and strategic advisory, we ensure that every detail 
+    is handled with precision and care. We uphold the highest standards of 
+    integrity, accuracy, and confidentiality in every engagement.
+  </p>
+
+  <p>
+    Whether it’s managing complex tax matters, streamlining accounting processes, 
+    or offering actionable financial insights for decision-making, we remain 
+    committed to excellence at every step.
+  </p>
+</div>
+
             </motion.div>
           </motion.div>
 

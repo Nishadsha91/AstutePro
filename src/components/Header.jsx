@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
 
   const menuItems = [
@@ -17,88 +16,93 @@ const Header = () => {
   const isActive = (to) => location.pathname === to;
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-white rounded-b-xl  backdrop-blur-sm">
+    <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-md border-b border-emerald-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-3.5">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-blue-600 rounded-xl blur-sm opacity-0 group-hover:opacity-20 transition-opacity"></div>
-              <img
-                src="Logo.png"
-                alt="Astutepro Logo"
-                className="h-11 w-auto relative z-10 transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div>
-<h1 className="text-xl sm:text-2xl font-extrabold text-gray-900 font-[Raleway] tracking-wide group-hover:text-blue-600 transition-colors">
-  ASTUTEPRO
-</h1>
-<p className="text-xs sm:text-sm uppercase text-gray-600 font-[Raleway] font-medium tracking-wider">
-  ACCOUNTS | TAX | IT
-</p>
+        
+        {/* MAIN ROW */}
+        <div className="flex items-center justify-between py-4">
+          
+          {/* LOGO */}
+ <Link to="/" className="flex items-center gap-1">
+  <img
+    src="/Logo1.png"
+    alt="AstutePro Logo"
+    className="h-12 w-auto object-contain"
+  />
+
+  <div className="leading-tight">
+    <h1 className="text-xl sm:text-2xl font-extrabold tracking-wide font-[Montserrat] text-slate-900">
+      <span className="text-gray-700 ">
+        Astute
+      </span>
+      <span className="bg-gradient-to-r from-emerald-700 to-green-600 text-transparent bg-clip-text ">Pro</span>
+    </h1>
+
+    <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-[Inter] text-slate-600">
+      Accounts • Tax • IT
+    </p>
+  </div>
+</Link>
 
 
 
-            </div>
-          </Link>
+          {/* DESKTOP MENU */}
+          <nav className="hidden lg:flex items-center gap-8">
+            {menuItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.to}
+                className={`relative text-[15px] font-medium transition duration-300 ${
+                  isActive(item.to)
+                    ? "text-emerald-600"
+                    : "text-slate-700 hover:text-emerald-600"
+                }`}
+              >
+                {item.name}
 
-{/* Desktop Menu */}
-<nav className="hidden lg:flex items-center gap-6">
-  {menuItems.map((item) => (
-    <div key={item.name} className="relative group">
-      <Link
-        to={item.to}
-        className={`px-1 py-2 font-medium transition-colors duration-300 ${
-          isActive(item.to)
-            ? "text-blue-600" 
-            : "text-gray-700 hover:text-blue-600"
-        }`}
-      >
-        <span
-          className={`relative after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[1.5px] after:bg-blue-600 after:transition-all after:duration-300 group-hover:after:left-0 group-hover:after:w-full`}>
-          {item.name}
-        </span>
-      </Link>
-    </div>
-  ))}
-</nav>
+                {/* Underline Animation */}
+                <span
+                  className={`absolute left-0 -bottom-1 h-[2px] bg-emerald-600 transition-all duration-300 ${
+                    isActive(item.to)
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
+              </Link>
+            ))}
+          </nav>
 
-
-          {/* Mobile Menu Button */}
+          {/* MOBILE MENU BTN */}
           <button
-            className="lg:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
             onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden p-2 rounded-lg hover:bg-slate-100 transition"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-screen" : "max-h-0"
+        className={`lg:hidden overflow-hidden shadow-inner transition-all duration-300 ${
+          isOpen ? "max-h-[400px]" : "max-h-0"
         }`}
       >
-        <nav className="bg-white border-t border-gray-100 px-4 py-4">
-          <ul className="space-y-1">
-            {menuItems.map((item) => (
-              <li key={item.name}>
-                <Link
-                  to={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-lg transition-colors duration-200 ${
-                    isActive(item.to)
-                      ? "text-blue-600 bg-blue-50"
-                      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <nav className="bg-white border-t border-slate-200 px-4 py-4 space-y-2">
+          {menuItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.to}
+              onClick={() => setIsOpen(false)}
+              className={`block px-4 py-3 rounded-lg font-medium transition ${
+                isActive(item.to)
+                  ? "bg-emerald-50 text-emerald-700"
+                  : "text-slate-700 hover:bg-emerald-50 hover:text-emerald-700"
+              }`}
+            >
+              {item.name}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

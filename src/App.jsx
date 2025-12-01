@@ -19,6 +19,9 @@ import Mis from './services/mis';
 import Payroll from './services/payroll';
 import Vat from './services/vat';
 import Web from './services/web';
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiesPolicy from "./pages/CookiesPolicy";
 
 function App() {
   return (
@@ -43,6 +46,10 @@ function App() {
         <Route path="/payroll-service" element={<Payroll />} /> 
         <Route path="/vat-service" element={<Vat />} /> 
         <Route path="/web-service" element={<Web />} /> 
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/cookies" element={<CookiesPolicy />} />
+
 
 
       </Routes>

@@ -56,7 +56,7 @@ function Hero() {
                   EMPOWERING
                 </span>
                 <span className="fade-in-text delay-300 block bg-gradient-to-r from-gray-800 via-emerald-800 to-gray-800 text-transparent bg-clip-text">
-                  BUSINESS
+                  BUSINESS...
                 </span>
               </h1>
 
