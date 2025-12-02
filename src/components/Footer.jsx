@@ -5,19 +5,20 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   // All services from your image
-  const services = [
-    { name: "Accounting & Bookkeeping", href: "/accounting-service" },
-    { name: "Audit & Internal Audit", href: "/auditing-service" },
-    { name: "MIS, Budgeting & Product Costing", href: "/mis-budget-service" },
-    { name: "Value Added Tax Services", href: "/vat-service" },
-    { name: "Payroll Services", href: "/payroll-service" },
-    { name: "ERP & Accounting Softwares", href: "/erp-service" },
-    { name: "Corporate Tax Services", href: "/corporate-service" },
-    { name: "Inventory & Fixed Asset Verification", href: "/inventory-service" },
-    { name: "Web & App Development", href: "/web-service" },
-    { name: "Business Setup Services", href: "/business-service" },
-    { name: "ESR & AML Compliance", href: "/esr-services" },
-  ];
+const services = [
+  { name: "Accounting & Bookkeeping", href: "/accounting-service" },
+  { name: "Audit & Internal Audit", href: "/auditing-service" },
+  { name: "MIS, Budgeting & Product Costing", href: "/mis-budget-service" },
+  { name: "Value Added Tax Services", href: "/vat-service" },
+  { name: "Payroll Services", href: "/payroll-service" },
+  { name: "ERP & Accounting Softwares", href: "/erp-service" },
+  { name: "Corporate Tax Services", href: "/corporate-service" },
+  { name: "Inventory & Fixed Asset Verification", href: "/inventory-service" },
+  { name: "Web & App Development", href: "/web-service" },
+  { name: "Business Setup Services", href: "/business-service" },
+  { name: "ESR & AML Compliance", href: "/esr-service" },  // ✔ FIXED
+];
+
 
   return (
     <footer className="relative bg-slate-900 text-white">
