@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Globe, Smartphone, Code, TrendingUp, Users } from "lucide-react";
 
-function Web() {
+export default function Web() {
   const features = [
     {
       icon: <Globe className="w-6 h-6" />,
@@ -143,4 +143,3 @@ function Web() {
   );
 }
 
-export default Web;

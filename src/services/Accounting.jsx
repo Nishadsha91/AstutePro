@@ -2,7 +2,7 @@ import React from "react";
 import { Mail, TrendingUp, Shield, BarChart3, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function Accounting() {
+export default function Accounting() {
   const features = [
     {
       icon: <TrendingUp className="w-6 h-6" />,
@@ -137,4 +137,3 @@ function Accounting() {
   );
 }
 
-export default Accounting;

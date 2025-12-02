@@ -8,22 +8,21 @@ import Footer from './components/Footer'
 import Contact from './components/Contact';
 import Preloader from './components/Preloader';
 import ScrollToTop from './components/ScrollToTop';
-import Accounting from './services/Accounting';
-import Audit from './services/Audit';
-
-import Corporate from './services/corporate';
-import Erp from './services/erp';
-import Esr from './services/esr';
-import Inventory from './services/inventory';
-import Mis from './services/mis';
-import Payroll from './services/payroll';
-import Vat from './services/vat';
-import Web from './services/web';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiesPolicy from "./pages/CookiesPolicy";
-import Busines from './services/busines';
 import BackToTop from './components/BackToTop';
+import Accounting from './services/Accounting';
+import Audit from './services/Audit';
+import Busines from './services/busines';
+import Corporate from './services/Corporate';
+import Erp from './services/Erp';
+import Esr from './services/Esr';
+import Inventory from './services/Inventory';
+import Mis from './services/Mis';
+import Payroll from './services/Payroll';
+import Vat from './services/Vat';
+import Web from './services/Web';
 
 function App() {
   return (

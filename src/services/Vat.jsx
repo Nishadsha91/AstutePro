@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Shield, FileText, CheckCircle, Calculator, BookOpen } from "lucide-react";
 
-function Vat() {
+export default function Vat() {
   const features = [
     {
       icon: <Shield className="w-6 h-6" />,
@@ -141,4 +141,3 @@ function Vat() {
   );
 }
 
-export default Vat;

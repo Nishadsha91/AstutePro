@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, BarChart2, DollarSign, Target, Settings, Cpu } from "lucide-react";
 
-function Mis() {
+export default function Mis() {
   const features = [
     {
       icon: <BarChart2 className="w-6 h-6" />,
@@ -141,4 +141,3 @@ function Mis() {
   );
 }
 
-export default Mis;

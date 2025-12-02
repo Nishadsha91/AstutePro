@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, ClipboardCheck, Warehouse, TrendingUp, Search, Shield } from "lucide-react";
 
-function Inventory() {
+export default function Inventory() {
   const features = [
     {
       icon: <Warehouse className="w-6 h-6" />,
@@ -143,4 +143,3 @@ function Inventory() {
   );
 }
 
-export default Inventory;

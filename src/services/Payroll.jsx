@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, DollarSign, Users, Clock, ShieldCheck, FileText } from "lucide-react";
 
-function Payroll() {
+export default function Payroll() {
   const features = [
     {
       icon: <DollarSign className="w-6 h-6" />,
@@ -141,4 +141,3 @@ function Payroll() {
   );
 }
 
-export default Payroll;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Zap, Database, TrendingUp, Cpu, CheckCircle } from "lucide-react";
 
-function Erp() {
+export default function Erp() {
   const features = [
     {
       icon: <Database className="w-6 h-6" />,
@@ -141,4 +141,3 @@ function Erp() {
   );
 }
 
-export default Erp;

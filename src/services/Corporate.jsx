@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Landmark, FileText, CheckCircle, Calculator, Shield } from "lucide-react";
 
-function Corporate() {
+export default function Corporate() {
   const features = [
     {
       icon: <Landmark className="w-6 h-6" />,
@@ -141,4 +141,3 @@ function Corporate() {
   );
 }
 
-export default Corporate;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, CheckCircle, Shield, FileText, Briefcase, Users } from "lucide-react";
 
-function Esr() {
+export default function Esr() {
   const features = [
     {
       icon: <Shield className="w-6 h-6" />,
@@ -143,4 +143,3 @@ function Esr() {
   );
 }
 
-export default Esr;

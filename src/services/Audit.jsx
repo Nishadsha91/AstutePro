@@ -1,7 +1,7 @@
 import React from "react";
 import { Mail, Shield, CheckCircle, BarChart3, Eye } from "lucide-react";
 
-function Audit() {
+export default function Audit() {
   const features = [
     {
       icon: <Eye className="w-6 h-6" />,
@@ -138,4 +138,3 @@ function Audit() {
   );
 }
 
-export default Audit;
