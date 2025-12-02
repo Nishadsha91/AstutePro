@@ -10,7 +10,7 @@ import Preloader from './components/Preloader';
 import ScrollToTop from './components/ScrollToTop';
 import Accounting from './services/Accounting';
 import Audit from './services/Audit';
-import Busines from './services/busines';
+
 import Corporate from './services/corporate';
 import Erp from './services/erp';
 import Esr from './services/esr';
@@ -22,6 +22,8 @@ import Web from './services/web';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiesPolicy from "./pages/CookiesPolicy";
+import Busines from './services/busines';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
@@ -53,7 +55,7 @@ function App() {
 
 
       </Routes>
-      
+      <BackToTop/>
       <Footer />
     </>
   );

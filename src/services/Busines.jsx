@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Briefcase, Globe, Landmark, DollarSign, Target } from "lucide-react";
 
-function Busines() {
+export default function Busines() {
   const features = [
     {
       icon: <Globe className="w-6 h-6" />,
@@ -140,5 +140,3 @@ function Busines() {
     </div>
   );
 }
-
-export default Busines;
