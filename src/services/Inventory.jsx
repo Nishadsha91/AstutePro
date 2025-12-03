@@ -53,14 +53,14 @@ export default function Inventory() {
                 The Necessity of Inventory Verification
               </h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **Inventory verification** is vital for ensuring that the physical stock matches the records in the books, safeguarding assets from errors, theft, or losses. It provides accurate financial reporting, supports compliance, and strengthens internal controls.
+                Inventory verification is vital for ensuring that the physical stock matches the records in the books, safeguarding assets from errors, theft, or losses. It provides accurate financial reporting, supports compliance, and strengthens internal controls.
               </p>
               
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 The Role of Fixed Assets Verification
               </h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **Fixed assets verification** is essential to confirm the existence, ownership, and condition of an organization’s long-term assets, such as buildings, machinery, and equipment. It ensures assets are correctly valued and not misused or lost.
+                Fixed assets verification is essential to confirm the existence, ownership, and condition of an organization’s long-term assets, such as buildings, machinery, and equipment. It ensures assets are correctly valued and not misused or lost.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -130,10 +130,10 @@ export default function Inventory() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Contact us today for an independent and reliable verification of your inventory and fixed assets.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Schedule a Verification Service
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -51,11 +51,12 @@ function Hero() {
           <div className="flex-1 text-center lg:text-left space-y-6 lg:space-y-8 max-w-2xl mx-auto lg:mx-0">
             <div className="space-y-4 lg:space-y-6">
               {/* Responsive Text */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-center lg:text-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-4xl font-extrabold leading-tight text-center lg:text-left">
                 <span className="fade-in-text block bg-gradient-to-r from-emerald-800 to-gray-900 text-transparent bg-clip-text">
                   EMPOWERING
-                </span>
-                <span className="fade-in-text delay-300 block bg-gradient-to-r from-gray-800 via-emerald-800 to-gray-800 text-transparent bg-clip-text">
+                {/* </span> */}
+                &nbsp;
+                {/* <span className="fade-in-text delay-300 block bg-gradient-to-r from-gray-800 via-emerald-800 to-gray-800 text-transparent bg-clip-text"> */}
                   BUSINESS...
                 </span>
               </h1>
@@ -68,7 +69,8 @@ function Hero() {
               </div>
             </div>
 
-            <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed max-w-2xl">
+            <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed text-justify max-w-2xl">
+
               Navigate complex tax regulations and optimize your financial strategy with our comprehensive 
               accounting services. We deliver precision, compliance, and peace of mind.
             </p>
@@ -209,6 +211,7 @@ function AboutPreview() {
     <section className="py-12 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-emerald-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8">
             <div className="space-y-4">
@@ -222,13 +225,13 @@ function AboutPreview() {
               <div className="h-1 w-16 lg:w-20 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
             </div>
 
-            <p className="text-base lg:text-lg text-slate-700 leading-relaxed">
+            <p className="text-base lg:text-lg text-slate-700 leading-relaxed text-justify">
               At <strong>AstutePro</strong>, we are a team of seasoned professionals with over a decade of expertise 
               in accounts, taxation, audit, and financial management. We provide end-to-end solutions tailored 
               to your unique business needs.
             </p>
 
-            <p className="text-base lg:text-lg text-slate-700 leading-relaxed">
+            <p className="text-base lg:text-lg text-slate-700 leading-relaxed text-justify">
               Our commitment to precision, integrity, and client success has made us the preferred choice for 
               businesses seeking reliable financial guidance and strategic insights.
             </p>
@@ -249,6 +252,7 @@ function AboutPreview() {
 
           {/* Right Content - Vision & Mission Cards */}
           <div className="space-y-4 lg:space-y-6">
+
             {/* Vision Card */}
             <div className="group p-6 lg:p-8 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
               <div className="flex items-center gap-3 mb-4">
@@ -257,7 +261,7 @@ function AboutPreview() {
                 </div>
                 <h3 className="text-xl lg:text-2xl font-bold">Our Vision</h3>
               </div>
-              <p className="text-emerald-100 leading-relaxed text-sm lg:text-base">
+              <p className="text-emerald-100 leading-relaxed text-sm lg:text-base text-justify">
                 To be the most trusted and innovative provider of accounting and tax services, recognized for 
                 delivering excellence and fostering client growth.
               </p>
@@ -271,12 +275,14 @@ function AboutPreview() {
                 </div>
                 <h3 className="text-xl lg:text-2xl font-bold text-slate-900">Our Mission</h3>
               </div>
-              <p className="text-slate-700 leading-relaxed text-sm lg:text-base">
+              <p className="text-slate-700 leading-relaxed text-sm lg:text-base text-justify">
                 To provide accounting, tax, and finance services with precision, transparency, and integrity, 
                 creating lasting value for our clients and their businesses.
               </p>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
@@ -293,13 +299,19 @@ function ServicesPreview() {
       features: ["Daily Bookkeeping", "Financial Statements", "Bank Reconciliation"],
       color: "from-emerald-500 to-emerald-600"
     },
-    {
-      icon: <Shield className="w-6 h-6 lg:w-8 lg:h-8" />,
-      title: "Corporate Tax Services",
-      description: "Thorough audit services and regulatory compliance management",
-      features: ["Internal Audits", "Compliance Verification", "Risk Assessment"],
-      color: "from-green-500 to-green-600"
-    },
+{
+  icon: <Shield className="w-6 h-6 lg:w-8 lg:h-8" />,
+  title: "Corporate Tax Services",
+  description:
+    "Reliable Corporate Tax compliance, registration, and return filing for businesses of all sizes.",
+  features: [
+    "Corporate Tax Registration",
+    "Taxable Income Calculation",
+    "CIT Return Preparation & Filing",
+  ],
+  color: "from-green-500 to-green-600"
+},
+
     {
       icon: <TrendingUp className="w-6 h-6 lg:w-8 lg:h-8" />,
       title: "VAT Services",
@@ -331,7 +343,8 @@ function ServicesPreview() {
           <div className="flex justify-center mb-4 lg:mb-6">
             <div className="h-1 w-16 lg:w-20 bg-gradient-to-r from-emerald-400 to-green-500 rounded-full"></div>
           </div>
-          <p className="text-base lg:text-xl text-slate-300 leading-relaxed px-4">
+          <p className="text-base lg:text-xl text-slate-300 leading-relaxed text-justify px-4">
+
             End-to-end professional services designed to optimize your financial operations, 
             ensure compliance, and drive sustainable business growth.
           </p>
@@ -425,7 +438,8 @@ function WhyChooseUs() {
           <div className="flex justify-center mb-4 lg:mb-6">
             <div className="h-1 w-16 lg:w-20 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
           </div>
-          <p className="text-base lg:text-xl text-slate-700 leading-relaxed px-4">
+          <p className="text-base lg:text-xl text-slate-700 leading-relaxed text-justify px-4">
+
             We stand out through our commitment to excellence, client-centric approach, 
             and unwavering dedication to your business success.
           </p>

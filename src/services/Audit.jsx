@@ -125,10 +125,11 @@ export default function Audit() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Let's discuss how our audit services can help your business maintain transparency, accountability, and sustainable growth.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Get in Touch Today
-          </button>
+          </Link>
         </div>
       </div>
 

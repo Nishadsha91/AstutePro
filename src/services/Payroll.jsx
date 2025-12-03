@@ -50,15 +50,15 @@ export default function Payroll() {
           <div className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **Payroll** is the foundation of employee trust. It ensures your workforce is paid **correctly and on time**, covering all complexities like salaries, overtime, bonuses, and statutory deductions. This consistency builds morale and reinforces confidence in your organization.
+                Payroll is the foundation of employee trust. It ensures your workforce is paid correctly and on time, covering all complexities like salaries, overtime, bonuses, and statutory deductions. This consistency builds morale and reinforces confidence in your organization.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Utilizing **automated and professional payroll systems** is key to reducing administrative burden. It allows your HR and management teams to shift their focus from repetitive tasks to strategic business activities and growth initiatives.
+                Utilizing automated and professional payroll systems is key to reducing administrative burden. It allows your HR and management teams to shift their focus from repetitive tasks to strategic business activities and growth initiatives.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Above all, professional payroll ensures strict **compliance** with labor laws, tax requirements, social security, and other statutory obligations, actively avoiding penalties and mitigating legal risks.
+                Above all, professional payroll ensures strict compliance with labor laws, tax requirements, social security, and other statutory obligations, actively avoiding penalties and mitigating legal risks.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -128,10 +128,10 @@ export default function Payroll() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Take the complexity out of payroll and compliance. Contact us to start your secure, efficient payroll processing today.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
-            Discuss Payroll Outsourcing
-          </button>
+             Discuss Payroll Outsourcing
+          </Link>
         </div>
       </div>
 

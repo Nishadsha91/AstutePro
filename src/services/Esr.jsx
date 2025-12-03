@@ -53,14 +53,14 @@ export default function Esr() {
                 Economic Substance Regulations (ESR)
               </h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **ESR compliance** in the UAE is highly important as it ensures businesses operating in certain sectors meet international tax standards and maintain transparency. It prevents harmful tax practices and ensures companies undertaking **"relevant activities"** have a **real economic presence** in the UAE.
+                ESR compliance in the UAE is highly important as it ensures businesses operating in certain sectors meet international tax standards and maintain transparency. It prevents harmful tax practices and ensures companies undertaking "relevant activities" have a real economic presence in the UAE.
               </p>
               
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Anti-Money Laundering (AML) Compliance
               </h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **AML compliance** is crucial as it helps businesses prevent financial crimes, protect their reputation, and align with global regulatory standards. The UAE requires companies to conduct due diligence, maintain proper records, and report suspicious transactions, particularly in financial, real estate, and professional service sectors.
+                AML compliance is crucial as it helps businesses prevent financial crimes, protect their reputation, and align with global regulatory standards. The UAE requires companies to conduct due diligence, maintain proper records, and report suspicious transactions, particularly in financial, real estate, and professional service sectors.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -130,10 +130,10 @@ export default function Esr() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Contact us to ensure your business meets the rigorous standards of both ESR and AML regulations in the UAE.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Discuss Your Compliance Needs
-          </button>
+          </Link>
         </div>
       </div>
 

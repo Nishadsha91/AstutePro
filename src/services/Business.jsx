@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Briefcase, Globe, Landmark, DollarSign, Target } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function Busines() {
   const features = [
@@ -50,7 +51,7 @@ export default function Busines() {
           <div className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                The **UAE** has become one of the world’s most attractive destinations for starting a business due to its **strategic location, investor-friendly policies,** and modern infrastructure.
+                The UAE has become one of the world’s most attractive destinations for starting a business due to its strategic location, investor-friendly policies, and modern infrastructure.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
@@ -58,12 +59,12 @@ export default function Busines() {
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                The country provides a favorable tax regime, along with numerous free zones offering full foreign ownership and repatriation of profits, creating a secure and **growth-oriented environment.**
+                The country provides a favorable tax regime, along with numerous free zones offering full foreign ownership and repatriation of profits, creating a secure and growth-oriented environment.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
                 <p className="text-gray-800 text-lg font-medium italic">
-                  "While the UAE is a hub of opportunity, **proper research and due diligence are essential.** We simplify the complex process of choosing the right licenses, jurisdiction, and location to ensure a seamless establishment."
+                  "While the UAE is a hub of opportunity, proper research and due diligence are essential. We simplify the complex process of choosing the right licenses, jurisdiction, and location to ensure a seamless establishment."
                 </p>
               </div>
             </div>
@@ -97,7 +98,7 @@ export default function Busines() {
               Our Expert Guidance
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              We assist our clients in providing expert guidance on choosing the right legal **structure** and **jurisdiction** (Free Zone/Mainland), ensuring compliance with all regulatory requirements.
+              We assist our clients in providing expert guidance on choosing the right legal structure and jurisdiction (Free Zone/Mainland), ensuring compliance with all regulatory requirements.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
               We manage the entire process, from due diligence and licensing to providing all services necessary to start operations and establish your business firmly.
@@ -130,8 +131,12 @@ export default function Busines() {
           </p>
           <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
-            Start Your Setup Journey
+            
           </button>
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+            <Mail className="mr-3" size={22} /> 
+Start Your Setup Journey
+          </Link>
         </div>
       </div>
 

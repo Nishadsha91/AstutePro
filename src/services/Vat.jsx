@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Shield, FileText, CheckCircle, Calculator, BookOpen } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function Vat() {
   const features = [
@@ -50,15 +51,15 @@ export default function Vat() {
           <div className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Complying with **VAT laws** in the UAE is essential for every registered business. Proper VAT compliance ensures that companies avoid heavy fines, penalties, and legal consequences imposed by the Federal Tax Authority (FTA).
+                Complying with VAT laws in the UAE is essential for every registered business. Proper VAT compliance ensures that companies avoid heavy fines, penalties, and legal consequences imposed by the Federal Tax Authority (FTA).
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Beyond avoiding risks, compliance builds **credibility and trust** with customers, investors, and regulators. It also provides accurate financial records, making business decisions more reliable and transparent.
+                Beyond avoiding risks, compliance builds credibility and trust with customers, investors, and regulators. It also provides accurate financial records, making business decisions more reliable and transparent.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                By meeting VAT obligations on time, businesses not only safeguard their reputation but also strengthen their **long-term sustainability** and growth in the UAE’s regulated business environment.
+                By meeting VAT obligations on time, businesses not only safeguard their reputation but also strengthen their long-term sustainability and growth in the UAE’s regulated business environment.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -128,10 +129,11 @@ export default function Vat() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Let our taxation experts ensure your business meets every VAT obligation efficiently and accurately.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+         
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Get VAT Compliance Support
-          </button>
+          </Link>
         </div>
       </div>
 

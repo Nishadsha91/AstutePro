@@ -53,14 +53,14 @@ export default function Web() {
                 The Power of a Digital Face
               </h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                A **website** is the digital face of a company, crucial for **building credibility, enhancing visibility, and driving growth**. It provides vital information, acts as a central hub for marketing, and enables cost-effective promotion compared to traditional methods.
+                A website is the digital face of a company, crucial for building credibility, enhancing visibility, and driving growth. It provides vital information, acts as a central hub for marketing, and enables cost-effective promotion compared to traditional methods.
               </p>
               
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 The Mobile Engagement Advantage
               </h2>
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                A **mobile app** is a powerful tool to strengthen customer engagement, improve accessibility, and drive business growth. It allows users to interact with products and services anytime, anywhere, offering convenience and a personalized experience.
+                A mobile app is a powerful tool to strengthen customer engagement, improve accessibility, and drive business growth. It allows users to interact with products and services anytime, anywhere, offering convenience and a personalized experience.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -129,11 +129,11 @@ export default function Web() {
           </h2>
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Let's design and deploy a website or mobile app that engages customers and drives your business growth.
-          </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+          </p>  
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Start Your Project Consultation
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Landmark, FileText, CheckCircle, Calculator, Shield } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function Corporate() {
   const features = [
@@ -50,15 +51,15 @@ export default function Corporate() {
           <div className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                The UAE introduced its first federal **Corporate Income Tax (CIT)**, marking a significant shift in its tax policy. The CIT structure is designed to align with international standards while maintaining competitiveness.
+                The UAE introduced its first federal Corporate Income Tax (CIT), marking a significant shift in its tax policy. The CIT structure is designed to align with international standards while maintaining competitiveness.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Compliance with corporate tax laws in the UAE is **critical** for every business to operate legally and sustainably. Adhering to the Federal Tax Authority’s requirements helps companies avoid severe penalties, interest charges, and reputational damage.
+                Compliance with corporate tax laws in the UAE is critical for every business to operate legally and sustainably. Adhering to the Federal Tax Authority’s requirements helps companies avoid severe penalties, interest charges, and reputational damage.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Beyond compliance, effective tax management ensures **transparent reporting**, accurate financial planning, and smoother audits, establishing a credible foundation for your business.
+                Beyond compliance, effective tax management ensures transparent reporting, accurate financial planning, and smoother audits, establishing a credible foundation for your business.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -128,10 +129,10 @@ export default function Corporate() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Let our experts guide you through the new UAE Corporate Tax landscape efficiently and compliantly.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Book a Corporate Tax Consultation
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -50,11 +50,11 @@ export default function Erp() {
           <div className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **Enterprise Resource Planning (ERP)** is vital for modern businesses as it integrates core functions—such as finance, sales, and operations—into a **single unified system**. This improves accuracy, reduces duplication, and enhances organizational efficiency.
+                Enterprise Resource Planning (ERP) is vital for modern businesses as it integrates core functions—such as finance, sales, and operations—into a single unified system. This improves accuracy, reduces duplication, and enhances organizational efficiency.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                Simultaneously, specialized **Accounting Software** plays a crucial role in managing multiple compliance requirements, including VAT, corporate tax, and regulatory reporting. It **automates** transaction recording, tax calculations, and return filing, significantly reducing errors and saving time.
+                Simultaneously, specialized Accounting Software plays a crucial role in managing multiple compliance requirements, including VAT, corporate tax, and regulatory reporting. It automates transaction recording, tax calculations, and return filing, significantly reducing errors and saving time.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
@@ -128,10 +128,11 @@ export default function Erp() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Ready to enhance efficiency and ensure compliance? Let us help you select and implement the perfect ERP or accounting solution.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Discuss Your System Needs
-          </button>
+          </Link>
         </div>
       </div>
 

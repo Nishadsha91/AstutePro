@@ -50,15 +50,15 @@ export default function Mis() {
           <div className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                A **Management Information System (MIS)** is vital as it provides accurate, timely, and relevant data to support **decision-making** at all levels. By integrating data from various functions, MIS helps management monitor performance, identify trends, and respond quickly to market changes.
+                A Management Information System (MIS) is vital as it provides accurate, timely, and relevant data to support decision-making at all levels. By integrating data from various functions, MIS helps management monitor performance, identify trends, and respond quickly to market changes.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **Budgeting** helps organizations set realistic goals, allocate funds wisely, and manage cash flow. Comparing actual performance with budgeted figures allows management to identify variances and take **corrective action** to control costs.
+                Budgeting helps organizations set realistic goals, allocate funds wisely, and manage cash flow. Comparing actual performance with budgeted figures allows management to identify variances and take corrective action to control costs.
               </p>
 
               <p className="text-gray-700 text-xl leading-relaxed mb-6">
-                **Product costing** determines the total production cost (materials, labor, overheads). Accurate costing is crucial for setting **competitive yet profitable pricing**, evaluating product profitability, and making informed decisions on resource allocation.
+                Product costing determines the total production cost (materials, labor, overheads). Accurate costing is crucial for setting competitive yet profitable pricing, evaluating product profitability, and making informed decisions on resource allocation.
               </p>
 
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl my-8">
@@ -128,10 +128,10 @@ export default function Mis() {
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Partner with us to gain accurate insights, optimize costs, and align your financial processes for sustainable success.
           </p>
-          <button className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
+          <Link to={"/contact"} className="inline-flex items-center bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Mail className="mr-3" size={22} /> 
             Request a Consultation
-          </button>
+          </Link>
         </div>
       </div>
 
