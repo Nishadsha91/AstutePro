@@ -17,11 +17,11 @@ function HomePage() {
 function Hero() {
   const services = [
     { name: "Accounting & Bookkeeping", angle: 0, color: "from-emerald-500 to-emerald-600", icon: <BookText size={24} /> },
-    { name: "ERP & Softwares", angle: 300, color: "from-sky-500 to-sky-600", icon: <Settings2 size={24} /> },
-    { name: "Business Services", angle: 240, color: "from-cyan-500 to-cyan-600", icon: <Lightbulb size={24} /> },
+    { name: "ERP & Softwares", angle:60 , color: "from-sky-500 to-sky-600", icon: <Settings2 size={24} /> },
+    { name: "Business Services", angle: 120, color: "from-cyan-500 to-cyan-600", icon: <Lightbulb size={24} /> },
     { name: "Compliance", angle: 180, color: "from-lime-500 to-lime-600", icon: <Eye size={24} /> },
-    { name: "Corporate Tax", angle: 120, color: "from-teal-500 to-teal-600", icon: <Briefcase size={24} /> },
-    { name: "VAT Services", angle: 60, color: "from-green-500 to-green-600", icon: <Landmark size={24} /> },
+    { name: "Corporate Tax", angle:  240, color: "from-teal-500 to-teal-600", icon: <Briefcase size={24} /> },
+    { name: "VAT Services", angle: 300 , color: "from-green-500 to-green-600", icon: <Landmark size={24} /> },
 
 
   ];
