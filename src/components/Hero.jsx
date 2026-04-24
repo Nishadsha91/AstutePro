@@ -51,38 +51,58 @@ function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
           
           {/* Left - Content */}
-          <div className="flex-1 text-center lg:text-left space-y-6 lg:space-y-8 max-w-2xl mx-auto lg:mx-0">
-            <div className="space-y-4 lg:space-y-6">
+          {/* <div className="flex-1 text-center lg:text-left space-y-6 lg:space-y-8 max-w-2xl mx-auto lg:mx-0">
+            <div className="space-y-4 lg:space-y-6"> */}
+            <div className="flex-1 text-center lg:text-left space-y-6 lg:space-y-8 max-w-xl lg:max-w-2xl mx-auto lg:mx-0">
+
+              <div className="space-y-4 lg:space-y-6">    
               {/* Responsive Text */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-4xl font-extrabold leading-tight text-center lg:text-left">
+              {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-4xl font-extrabold leading-tight text-center lg:text-left">
                 <span className="fade-in-text block bg-gradient-to-r from-emerald-800 to-gray-900 text-transparent bg-clip-text">
                   EMPOWERING
-                {/* </span> */}
                 &nbsp;
-                {/* <span className="fade-in-text delay-300 block bg-gradient-to-r from-gray-800 via-emerald-800 to-gray-800 text-transparent bg-clip-text"> */}
                   BUSINESS...
                 </span>
-              </h1>
+              </h1> */}
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-4xl font-extrabold leading-tight text-center lg:text-left">
+      <span className="fade-in-text block bg-gradient-to-r from-emerald-800 to-gray-900 text-transparent bg-clip-text">
+        EMPOWERING BUSINESS...
+      </span>
+    </h1>
 
-              <div className="flex items-center justify-center lg:justify-start gap-3 lg:gap-4">
+              {/* <div className="flex items-center justify-center lg:justify-start gap-3 lg:gap-4">
                 <div className="h-1 w-12 lg:w-16 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
                 <p className="text-sm sm:text-base lg:text-lg text-emerald-700 font-semibold tracking-wider">
                   METICULOUSLY · CONSISTENTLY · SWIFTLY
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed text-justify max-w-2xl">
+                <div className="flex items-center justify-center lg:justify-start gap-3 lg:gap-4">
+      <div className="h-1 w-8 lg:w-16 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full"></div>
+      <p className="text-sm sm:text-base lg:text-lg text-emerald-700 font-semibold tracking-wider">
+        METICULOUSLY · CONSISTENTLY · SWIFTLY
+      </p>
+    </div>
+
+  </div>
+
+            {/* <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed text-justify max-w-2xl">
 
               Navigate complex tax regulations and optimize your financial strategy with our comprehensive 
               accounting services. We deliver precision, compliance, and peace of mind.
-            </p>
+            </p> */}
+
+              <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-relaxed text-center lg:text-left max-w-2xl">
+    Navigate complex tax regulations and optimize your financial strategy with our comprehensive 
+    accounting services. We deliver precision, compliance, and peace of mind.
+  </p>
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <Link
                 to="/services"
-                className="group relative px-6 py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105 text-sm lg:text-base"
+                className="group relative px-2 py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-105 text-sm lg:text-base"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative z-10 flex items-center justify-center gap-2 lg:gap-3">
