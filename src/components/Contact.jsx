@@ -94,7 +94,7 @@ function Hero() {
 // Contact Info Section
 function ContactInfo() {
   const contacts = [
-    { icon: Mail, title: "Email Us", details: "connect@astutepro.in", link: "mailto:connect@astutepro.in", color: "from-blue-500 to-cyan-500" },
+    { icon: Mail, title: "Email Us", details: "connect@astutepro.ae", link: "mailto:connect@astutepro.ae", color: "from-blue-500 to-cyan-500" },
     { icon: Phone, title: "Call Us", details: "+971 56 430 5634", link: "tel:+971564305634", color: "from-emerald-500 to-green-500" },
     { icon: Clock, title: "Business Hours", details: "Mon-Fri: 9:00 AM - 5:00 PM", link: "#", color: "from-orange-500 to-red-500" }
   ];
@@ -210,8 +210,8 @@ const whyChooseUs = [
       <div className="bg-white rounded-3xl p-8 shadow-lg border border-slate-200">
         <h3 className="text-xl font-bold text-slate-800 mb-4">Our Office</h3>
         <p className="text-slate-600 mb-4">
-          123 Business District<br />
-          Dubai, United Arab Emirates
+          Block B-B50-143, Sharjah Research Technology and Innovation Park, <br />Sharjah, U.A.E
+
         </p>
         <div className="aspect-video bg-slate-200 rounded-xl overflow-hidden">
           <iframe 

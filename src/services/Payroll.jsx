@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, DollarSign, Users, Clock, ShieldCheck, FileText } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function Payroll() {
   const features = [

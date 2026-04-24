@@ -1,5 +1,7 @@
 import React from 'react';
 import { Mail, Zap, Database, TrendingUp, Cpu, CheckCircle } from "lucide-react";
+import { Link } from 'react-router-dom';
+
 
 export default function Erp() {
   const features = [

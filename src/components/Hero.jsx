@@ -16,13 +16,16 @@ function HomePage() {
 
 function Hero() {
   const services = [
-    { name: "Book Keeping", angle: 0, color: "from-emerald-500 to-emerald-600", icon: <BookText size={24} /> },
-    { name: "VAT Services", angle: 60, color: "from-green-500 to-green-600", icon: <Landmark size={24} /> },
-    { name: "Corporate Tax", angle: 120, color: "from-teal-500 to-teal-600", icon: <Briefcase size={24} /> },
-    { name: "Auditing", angle: 180, color: "from-lime-500 to-lime-600", icon: <Eye size={24} /> },
+    { name: "Accounting & Bookkeeping", angle: 0, color: "from-emerald-500 to-emerald-600", icon: <BookText size={24} /> },
+    { name: "ERP & Softwares", angle: 300, color: "from-sky-500 to-sky-600", icon: <Settings2 size={24} /> },
     { name: "Business Services", angle: 240, color: "from-cyan-500 to-cyan-600", icon: <Lightbulb size={24} /> },
-    { name: "Softwares", angle: 300, color: "from-sky-500 to-sky-600", icon: <Settings2 size={24} /> },
+    { name: "Compliance", angle: 180, color: "from-lime-500 to-lime-600", icon: <Eye size={24} /> },
+    { name: "Corporate Tax", angle: 120, color: "from-teal-500 to-teal-600", icon: <Briefcase size={24} /> },
+    { name: "VAT Services", angle: 60, color: "from-green-500 to-green-600", icon: <Landmark size={24} /> },
+
+
   ];
+
 
   return (
     <section className="relative min-h-dvh flex items-center justify-center bg-gradient-to-br from-slate-50 via-emerald-50 to-slate-100 text-slate-900 overflow-hidden">

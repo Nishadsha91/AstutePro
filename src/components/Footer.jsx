@@ -7,7 +7,6 @@ function Footer() {
 
   const services = [
     { name: "Accounting & Bookkeeping", href: "/accounting-service" },
-    { name: "Audit & Internal Audit", href: "/auditing-service" },
     { name: "MIS, Budgeting & Product Costing", href: "/mis-budget-service" },
     { name: "Value Added Tax Services", href: "/vat-service" },
     { name: "Payroll Services", href: "/payroll-service" },
@@ -20,13 +19,23 @@ function Footer() {
   ];
 
   return (
-    <footer className="relative bg-slate-900 text-white">
+    <footer className="relative bg-slate-900 text-white overflow-hidden">
+
+      {/* BIG BACKGROUND TEXT */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <h1 className="md:text-[180px] font-black text-gray-500 opacity-[0.5] tracking-widest select-none">
+          ASTUTEPRO
+        </h1>
+      </div>
+
+      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 via-slate-900 to-slate-950"></div>
 
+      {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 py-12">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          
+
           {/* BRAND COLUMN */}
           <div>
             <div className="flex items-center space-x-3 mb-6 group">
@@ -37,25 +46,31 @@ function Footer() {
               />
 
               <div className="leading-tight">
-                <h1 className="text-xl sm:text-2xl font-extrabold tracking-wide font-[Montserrat] text-slate-900">
+                <h1 className="text-xl sm:text-2xl font-extrabold tracking-wide font-[Montserrat]">
                   <span className="text-slate-200">Astute</span>
-                  <span className="bg-gradient-to-r from-emerald-700 to-green-600 text-transparent bg-clip-text">Pro</span>
+                  <span className="bg-gradient-to-r from-emerald-500 to-green-400 text-transparent bg-clip-text">
+                    Pro
+                  </span>
                 </h1>
 
-                <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-[Inter] text-slate-600">
+                <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] font-[Inter] text-slate-400">
                   Accounts • Tax • IT
                 </p>
               </div>
             </div>
 
+            {/* ADDRESS */}
             <div className="space-y-4 text-sm">
               <div className="flex items-start">
                 <MapPin className="text-emerald-400 mt-1 mr-3 flex-shrink-0" size={16} />
                 <span className="text-slate-300">
-                  Block B-B50-143, Sharjah Research Technology and Innovation Park, <br />Sharjah, U.A.E
+                  Block B-B50-143, Sharjah Research Technology and Innovation Park,
+                  <br />
+                  Sharjah, U.A.E
                 </span>
               </div>
 
+              {/* PHONE */}
               <div className="flex items-center">
                 <Phone className="text-emerald-400 mr-3 flex-shrink-0" size={16} />
                 <div className="flex flex-col sm:flex-row sm:space-x-4">
@@ -68,7 +83,9 @@ function Footer() {
 
           {/* SERVICES COLUMN */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-emerald-400">Our Services</h3>
+            <h3 className="text-lg font-semibold mb-6 text-emerald-400">
+              Our Services
+            </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3">
               {services.map((service, i) => (
@@ -92,25 +109,36 @@ function Footer() {
 
         {/* BOTTOM BAR */}
         <div className="mt-12 pt-8 border-t border-slate-700 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-400">
+
           <p>&copy; {currentYear} AstutePro. All rights reserved.</p>
 
           <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6 mt-4 sm:mt-0">
-            <Link to="/privacy-policy" className="hover:text-emerald-400 transition hover:underline">
+            <Link
+              to="/privacy-policy"
+              className="hover:text-emerald-400 transition hover:underline"
+            >
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="hover:text-emerald-400 transition hover:underline">
+
+            <Link
+              to="/terms-of-service"
+              className="hover:text-emerald-400 transition hover:underline"
+            >
               Terms of Service
             </Link>
-            <Link to="/cookies" className="hover:text-emerald-400 transition hover:underline">
+
+            <Link
+              to="/cookies"
+              className="hover:text-emerald-400 transition hover:underline"
+            >
               Cookies
             </Link>
           </div>
-        </div>
 
+        </div>
       </div>
     </footer>
   );
 }
 
 export default Footer;
-
